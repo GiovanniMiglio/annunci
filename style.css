@@ -4,16 +4,7 @@ body {
   background-image:  url(img/sfondo.png);
   
 }
-:root {
- --ff-arancio: rgb(228, 149, 87);
-  --ff-acqua: rgb(137, 235, 204);
-  --ff-marrone: rgb(114, 60, 18);
-  --ff-verde: rgb(84, 180, 132);
-  --ff-rosa: rgb(206, 173, 185);
-  --ff-bordeaux: rgb(134, 75, 82);
-  --ff-bianco: rgb(222, 220, 220);
 
-}
 .start-div {
   min-height: 100vh;
   padding: 2rem 0;
@@ -58,7 +49,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Orbitron', sans-serif;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.86);
   transition: background 1s ease-in-out, box-shadow 1s ease-in-out;
   animation: pulseGlow 3s infinite;
 }
