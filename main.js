@@ -18,30 +18,30 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector("#annunci-container").appendChild(div);
             let progressBar = document.querySelector("#progress-bar");
             let width = 0;
-                function animateBar() {
-                    if (width >= 100) {
-                        bodyiniziale.classList.add("bodybg");
-                        bodyiniziale.innerHTML=""
-                        let logo = document.createElement("img");
-                        logo.src = "img/logo ok.png";
-                        logo.alt = "Logo";
-                        logo.classList.add("img-fluid", "d-block", "mx-auto", "w-25", "mt-5");
-                        bodyiniziale.appendChild(logo);
-                        setTimeout(function() {
-                            window.location.href = "home.html";
-                        }, 2000);                   
-                    } else {
-                        width++;
-                        progressBar.style.width = width + "%";
-                        progressBar.setAttribute("aria-valuenow", width);
-                        progressBar.innerHTML = width + "%";
-                        setTimeout(function() {
-                            requestAnimationFrame(animateBar);
-                        }, 100);
-                    }
-                    return progressBar.getAttribute("aria-valuemax");
+            function animateBar() {
+                if (width >= 100) {
+                    bodyiniziale.classList.add("bodybg");
+                    bodyiniziale.innerHTML=""
+                    let logo = document.createElement("img");
+                    logo.src = "img/logo ok.png";
+                    logo.alt = "Logo";
+                    logo.classList.add("img-fluid", "d-block", "mx-auto", "w-25", "mt-5");
+                    bodyiniziale.appendChild(logo);
+                    setTimeout(function() {
+                        window.location.href = "home.html";
+                    }, 2000);                   
+                } else {
+                    width++;
+                    progressBar.style.width = width + "%";
+                    progressBar.setAttribute("aria-valuenow", width);
+                    progressBar.innerHTML = width + "%";
+                    setTimeout(function() {
+                        requestAnimationFrame(animateBar);
+                    }, 100);
                 }
-                requestAnimationFrame(animateBar);
+                return progressBar.getAttribute("aria-valuemax");
+            }
+            requestAnimationFrame(animateBar);
             
             check = true;
         } else {

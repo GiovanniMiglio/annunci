@@ -1,61 +1,158 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Annunci</title>
-    <link rel="icon" type="image/x-icon" href="img/logo ok.png">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="home.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Annunci</title>
+  <link rel="icon" type="image/x-icon" href="img/logo ok.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-light p-0 bgnavcustom sticky-top">
-        <div class="container-fluid">
-            <div class="logo">
-                <img src="/img/logo ok.png" alt="Logo" width="100" height="104" class="d-inline-block align-text-top">
-            </div>
-            <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center mx-auto ">
-                <li class="nav-item mx-2">
-                    <a class="nav-link active metal-text fw-bold" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link active metal-text fw-bold" href="#">Annunci</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link active metal-text fw-bold " href="#">Contatti</a>
-                </li>
-            </ul>
-            <div class="ghost" style="width:100px; height:104px;">
-            </div>
+  <!-- navbar -->
+  <nav class="navbar navbar-light p-0 bgnavcustom sticky-top">
+    <div class="container-fluid">
+      <div class="logo">
+        <img src="/img/logo ok.png" alt="Logo" width="100" height="104" class="d-inline-block align-text-top">
+      </div>
+      <ul class="navbar-nav d-flex flex-row justify-content-center align-items-center mx-auto ">
+        <li class="nav-item mx-2">
+          <a class="nav-link active metal-text fw-bold" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link active metal-text fw-bold" href="#">Annunci</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link active metal-text fw-bold " href="chisono.html">Il Custode del Falo'</a>
+        </li>
+      </ul>
+      <div class="ghost" style="width:100px; height:104px;">
+      </div>
+    </div>
+    
+    
+    <div id="bordo-inf-navbar" class="bordo-inferiore-navbar"></div>
+  </nav>
+  <!-- hero sedction -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title metal-text">Benvenuto a Bonfire Board</h1>
+      <h2 class="hero-subtitle metal-text">Viandante</h2>
+      <p class="hero-description metal-text">Scegli attentamente con chi schierarti!!!</p>
+    </div>
+    <div class="bonfire-overlay"></div>
+    
+    <div class="character-wrapper" id="wrapper-artorias">
+      <div id="artorias" class="bonfire-figure figure-left" alt="artorias"></div>
+    </div>
+    
+    <div class="character-wrapper" id="wrapper-chest">
+      <div id="chest" class="bonfire-figure figure-center" alt="chest"></div>
+    </div>
+    <div class="character-wrapper" id="wrapper-knight">
+      <div id="knight" class="bonfire-figure figure-right" alt="knight">
+      </div>
+    </div>  
+  </section>
+  <!-- articoli -->
+  <div id="rune-section" class="rune-section text-center align-items-center justify-content-center">
+    <section id="bonfire-board-article" class="contenuto-approfondito ">
+      <article class="articolo mt-0 p-4 ">
+        <h1>⚔️ Nintendo Switch 2 vs PlayStation 5 vs Xbox Series X</h1>
+        <h2>Il Confronto Definitivo tra le Console di Nuova Generazione</h2>
+        
+        <p>Nel 2025, il mondo del gaming è più vibrante che mai. Tre console dominano la scena, ognuna con una filosofia diversa: <strong>Nintendo Switch 2</strong> punta sulla versatilità e sull’esperienza portatile, <strong>PlayStation 5</strong> sulla narrazione cinematografica e le esclusive, mentre <strong>Xbox Series X</strong> offre potenza bruta e un ecosistema ricco grazie a Game Pass.</p>
+        
+        <h2>🧠 Prestazioni e Hardware</h2>
+        <div class="table-wrapper">
+          <table class=" text-center mx-auto">
+            <tr>
+              <th>Caratteristica</th>
+              <th>Nintendo Switch 2</th>
+              <th>PlayStation 5</th>
+              <th>Xbox Series X</th>
+            </tr>
+            <tr>
+              <td>Tipo di console</td>
+              <td>Ibrida (portatile + dock)</td>
+              <td>Home console</td>
+              <td>Home console</td>
+            </tr>
+            <tr>
+              <td>CPU/GPU</td>
+              <td>Custom NVIDIA con DLSS</td>
+              <td>AMD Zen 2 / RDNA 2</td>
+              <td>AMD Zen 2 / RDNA 2</td>
+            </tr>
+            <tr>
+              <td>RAM</td>
+              <td>12 GB LPDDR5</td>
+              <td>16 GB GDDR6</td>
+              <td>16 GB GDDR6</td>
+            </tr>
+            <tr>
+              <td>Risoluzione</td>
+              <td>Fino a 4K in modalità dock</td>
+              <td>4K nativo, fino a 120 fps</td>
+              <td>4K nativo, fino a 120 fps</td>
+            </tr>
+            <tr>
+              <td>Archiviazione</td>
+              <td>SSD NVMe, espandibile</td>
+              <td>SSD 825 GB, espandibile</td>
+              <td>SSD 1 TB, espandibile</td>
+            </tr>
+            <tr>
+              <td>Portabilità</td>
+              <td>✅</td>
+              <td>❌</td>
+              <td>❌</td>
+            </tr>
+          </table>
         </div>
         
+        <h2>🎮 Giochi Esclusivi</h2>
+        <table class="text-center mx-auto">
+          <tr>
+            <th>Console</th>
+            <th>Esclusive di rilievo</th>
+          </tr>
+          <tr>
+            <td>Nintendo Switch 2</td>
+            <td>Zelda: Echoes of the Flame, Pokémon Eclipse, Metroid Rebirth</td>
+          </tr>
+          <tr>
+            <td>PlayStation 5</td>
+            <td>Spider-Man 2, Final Fantasy XVI, Wolverine, Horizon Forbidden West</td>
+          </tr>
+          <tr>
+            <td>Xbox Series X</td>
+            <td>Starfield, Fable, Elder Scrolls VI, titoli Activision e Bethesda via Game Pass</td>
+          </tr>
+        </table>
         
-        <div id="bordo-inf-navbar" class="bordo-inferiore-navbar"></div>
-    </nav>
-    <!-- hero sedction -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title metal-text">Benvenuto a Bonfire Board</h1>
-            <h2 class="hero-subtitle metal-text">Viandante</h2>
-        </div>
-        <div class="bonfire-overlay"></div>
+        <h2>🌐 Ecosistema e Servizi</h2>
+        <ul class="ul-articolo">
+          <li><strong>Nintendo Switch 2</strong>: Online migliorato, ma ancora limitato rispetto ai concorrenti. Forte appeal per il gioco locale e in mobilità.</li>
+          <li><strong>PlayStation 5</strong>: PS Plus offre giochi mensili e cloud gaming, ma meno flessibile di Game Pass.</li>
+          <li><strong>Xbox Series X</strong>: Game Pass è il re dei servizi: accesso a centinaia di giochi, inclusi titoli AAA al day-one.</li>
+        </ul>
         
-        <div class="character-wrapper" id="wrapper-artorias">
-            <div id="artorias" class="bonfire-figure figure-left" alt="artorias"></div>
-        </div>
+        <h2>🧭 Quale Scegliere?</h2>
+        <ul class="ul-articolo">
+          <li><strong>Vuoi giocare ovunque, anche sotto un tramonto calabrese?</strong> → Nintendo Switch 2</li>
+          <li><strong>Cerchi storie epiche e grafiche mozzafiato?</strong> → PlayStation 5</li>
+          <li><strong>Vuoi il massimo della potenza e convenienza?</strong> → Xbox Series X</li>
+        </ul>
         
-        <div class="character-wrapper" id="wrapper-chest">
-            <div id="chest" class="bonfire-figure figure-center" alt="chest"></div>
-        </div>
-        <div class="character-wrapper" id="wrapper-knight">
-            <div id="knight" class="bonfire-figure figure-right" alt="knight">
-            </div>
-        </div>
-        
-        
+        <h2>🔥 Conclusione</h2>
+        <blockquote>
+          Non esiste una console “migliore” in assoluto — dipende da <strong>come vivi il gaming</strong>. La Switch 2 è un compagno di viaggio, la PS5 è un cinema interattivo, la Xbox Series X è una centrale di potenza e contenuti. Quale accenderà il tuo BonFire?
+        </blockquote>
+      </article>
     </section>
+  </div>
 </body>
 
 

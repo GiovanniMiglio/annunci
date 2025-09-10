@@ -1,8 +1,8 @@
 :root {
   --ds-english-violet: rgb(71, 64, 93);
   --ds-rosso-scuro: rgb(89, 35, 9);
-  --rosso-sangue: rgb(80, 0, 0);      
-  --rosso-vivo: rgb(139, 0, 0);       
+  --rosso-sangue: rgb(80, 0, 0);
+  --rosso-vivo: rgb(139, 0, 0);
   --rosso-brillante: rgb(178, 34, 34);
   --ds-sinopia: rgb(210, 71, 21);
   --ds-tigers-eye: rgb(221, 128, 54);
@@ -47,7 +47,7 @@ body {
   transform: scaleY(1);
   transform-origin: top;
   transition: transform 2.5s ease-in-out, background-image 2.5s ease-in-out, height 2.5s ease-in-out;
-
+  
 }
 nav.navbar {
   position: sticky;
@@ -197,7 +197,7 @@ ul {
   z-index: 1;
   border: 10px solid transparent;
   border-image: url('./img/bordo.png') 60 round;
- 
+  
 }
 
 .hero::after {
@@ -222,6 +222,12 @@ ul {
   font-size: 3.5rem;
   font-weight: bold;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  color: var(--ds-grigio);
+}
+.hero-description {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
   margin-bottom: 16rem;
   color: var(--ds-grigio);
 }
@@ -231,10 +237,10 @@ ul {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow:
-    1px 1px 2px rgb(34, 34, 34),
-    2px 2px 4px rgb(68, 68, 68),
-    0 0 6px rgba(118, 118, 118, 0.6),
-    0 0 12px rgba(255, 255, 255, 0.1);
+  1px 1px 2px rgb(34, 34, 34),
+  2px 2px 4px rgb(68, 68, 68),
+  0 0 6px rgba(118, 118, 118, 0.6),
+  0 0 12px rgba(255, 255, 255, 0.1);
 }
 
 /* personaggi */
@@ -248,7 +254,7 @@ ul {
   font-size: 0.9rem;
   font-family: 'Optimus Princeps', serif;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-  max-width: 160px;
+  max-width: 193px;
   z-index: 3;
   text-align: center;
   opacity: 0;
@@ -293,7 +299,7 @@ ul {
   background-repeat: no-repeat;
   z-index: 2;
   will-change: transform, filter;
-
+  
 }
 
 
@@ -305,7 +311,7 @@ ul {
   bottom: 4%;
   filter: brightness(0.7) drop-shadow(0 0 10px rgba(47, 75, 113, 0.6));
   will-change: transform, filter;
-
+  
 }
 @keyframes glowArtorias {
   0% { filter: brightness(1.1) drop-shadow(0 0 5px rgba(47, 75, 113, 0.6)); }
@@ -314,7 +320,7 @@ ul {
 }
 
 .artorias-glow {
-  animation: glowArtorias 2s infinite;
+  animation: glowArtorias 2s infinite ease-in-out;
   animation-delay: 0.5s;
 }
 
@@ -326,7 +332,7 @@ ul {
   bottom: 18%;
   filter: brightness(1.2) drop-shadow(0 0 10px rgba(20, 31, 37, 0.6));
   will-change: transform, filter;
-
+  
 }
 @keyframes glowChest {
   0% { filter: brightness(1.1) drop-shadow(0 0 5px rgba(20, 31, 37, 0.6)); }
@@ -361,20 +367,24 @@ ul {
 .knight-glow {
   animation: glowKnight 2s infinite; 
   animation-delay: 0.5s;
-
+  
 }
 /* media hero */
 @media (max-width: 768px) {
-    .hero-content{
+  .hero-content{
     top: -13%;
   }
-
+  
   .hero-title {
     font-size: 1.5rem;
   }
   .hero-subtitle {
     font-size: 1.3rem;
     margin-bottom: 8rem;
+  }
+  .vignetta{
+    font-size: 0.6rem;
+    max-width: 132px;
   }
 }.figure-left:hover,
 .figure-center:hover,
@@ -388,12 +398,12 @@ ul {
   height: 200px;
 }
 
-  .figure-left{
-    left: -7%;
-    bottom: -1%;
-    width: 296px;
-    height: 257px;
-  }
+.figure-left{
+  left: -7%;
+  bottom: -1%;
+  width: 296px;
+  height: 257px;
+}
 .figure-center{
   left: 59%;
   bottom: 28%;
@@ -406,4 +416,74 @@ ul {
   height: 252px;
   bottom: 23%;
   z-index: 1;
+}
+/* articoli */
+.rune-section {
+  background: url('img/bordo-rune.png') center center no-repeat;
+  background-size: 113% 107%;
+  padding: 80px;
+  box-sizing: border-box;
+  margin: 0px auto;
+  position: relative;
+  width: 100%;
+}
+.articolo {
+  background-image:url('/img/sfondofalo.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  color: var(--ds-bianco-sporco);
+  margin-top: 0px;
+  
+}
+.articolo * {
+  background-color: rgba(4, 3, 3, 0.1);
+}
+
+.articolo h1, .articolo h2, .articolo h3, .articolo h4, .articolo h5, .articolo h6 {
+  color: rgb(190, 78, 2);
+  text-shadow:
+  0 0 2px rgb(0, 0, 0),
+  0 0 5px var(--rosso-sangue),
+  0 0 10px var(--rosso-vivo),
+  0 0 20px var(--rosso-brillante);
+}
+.ul-articolo {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+  list-style: none;
+}
+.contenuto-approfondito {
+  border: 10px solid transparent;
+  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+}
+@media (max-width: 768px){
+  .table-wrapper {
+    position: relative;
+    font-size: small;
+    left: -2%;
+    margin-bottom: 20px;
+  }
+  .contenuto-approfondito {
+    width: 130%;
+    font-size: medium;
+    padding-top: 50%;
+  }
+  .articolo {
+    position: relative;
+    
+    background-image: none;
+    width: 100%;
+    left: -7%;
+    margin-bottom: 20px;
+    
+  }
+  .rune-section {
+    background-size: 112% 114%;
+  }
 }

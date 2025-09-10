@@ -1,13 +1,20 @@
-// navbar
 const navbar = document.querySelector('.bgnavcustom');
-const sticky = navbar.offsetTop;
-const bordoInfNavbar = document.getElementById('bordo-inf-navbar');
+const bordoInfNavbar = document.querySelector('#bordo-inf-navbar');
+const runeSection = document.querySelector('#rune-section');
+
 function stickyNavbar() {
-    if (window.pageYOffset > 50) {
+    const scrollY = window.pageYOffset;
+    const runeOffsetTop = runeSection.offsetTop;
+    const navbarHeight = navbar.offsetHeight;
+    if (scrollY > 50) {
         navbar.classList.add('scrolled');
-        bordoInfNavbar.classList.add('bordo-inferiore-navbar-visible');
     } else {
         navbar.classList.remove('scrolled');
+    }
+    
+    if (scrollY > 50 && scrollY + navbarHeight < runeOffsetTop) {
+        bordoInfNavbar.classList.add('bordo-inferiore-navbar-visible');
+    } else {
         bordoInfNavbar.classList.remove('bordo-inferiore-navbar-visible');
     }
 }
@@ -31,7 +38,7 @@ function setInitialPositions() {
     
     if (isMobile) {
         artorias.style.left = '-7%';
-        artorias.style.bottom = '-1%';
+        artorias.style.bottom = '0%';
         artorias.style.width = '296px';
         artorias.style.height = '257px';
         
@@ -89,8 +96,7 @@ function creaVignettePersonaggi() {
     vignettaChest.style.top = '10%';
     wrapperChest.appendChild(vignettaChest);
 }
-setInitialPositions();
-creaVignettePersonaggi();
+setInitialPositions();  
 artorias.addEventListener('click', function () {
     const isMobile = window.matchMedia('(max-width: 768px)').matches;
     
@@ -102,10 +108,7 @@ artorias.addEventListener('click', function () {
         artorias.style.left = isMobile ? '-7%' : '22%';
         artorias.style.bottom = isMobile ? '5%' : '2%';
         artorias.style.width = isMobile ? '296px' : '320px';
-        artorias.style.height = isMobile ? '440px' : '467px';
-        
-        vignettaArtorias = document.createElement('div');
-        vignettaArtorias.classList.add('vignetta');
+        artorias.style.height = isMobile ? '440px' : '467px';  
         vignettaArtorias = document.createElement('div');
         vignettaArtorias.classList.add('vignetta');
         vignettaArtorias.innerHTML = `<b>PlayStation 5</b><br>
@@ -115,9 +118,13 @@ artorias.addEventListener('click', function () {
          ❌ Ingombrante e costosa<br>
          ❌ Limited compatibility with PS4 games`;
         vignettaArtorias.style.position = 'absolute';
-        vignettaArtorias.style.left = `17%`;
-        vignettaArtorias.style.top = `91%`;
-        
+        if (isMobile) {
+            vignettaArtorias.style.left = `35%`;
+            vignettaArtorias.style.top = `100%`;
+        } else {
+            vignettaArtorias.style.left = `17%`;
+            vignettaArtorias.style.top = `91%`;
+        } 
         document.body.appendChild(vignettaArtorias);
         attivoArtorias = true;
     } else {
@@ -126,8 +133,8 @@ artorias.addEventListener('click', function () {
         artorias.style.filter = '';
         
         artorias.style.left = isMobile ? '-7%' : '17%';
-        artorias.style.bottom = isMobile ? '-1%' : '4%';
-        artorias.style.width = isMobile ? '296px' : '315px';
+        artorias.style.bottom = isMobile ? '0%' : '4%';
+        artorias.style.width = isMobile ? '310px' : '315px';
         artorias.style.height = isMobile ? '257px' : '280px';
         
         if (vignettaArtorias) {
@@ -150,9 +157,7 @@ chest.addEventListener('click', function () {
         chest.style.bottom = isMobile ? '30%' : '9%';
         chest.style.width = isMobile ? '175px' : '268px';
         chest.style.height = isMobile ? '246px' : '384px';
-        
-        vignettaChest = document.createElement('div');
-        vignettaChest.classList.add('vignetta');
+        chest.style.zIndex = '1';
         vignettaChest = document.createElement('div');
         vignettaChest.classList.add('vignetta');
         vignettaChest.innerHTML = `
@@ -162,9 +167,14 @@ chest.addEventListener('click', function () {
          ✔️ Supports Xbox, 360, and One titles<br>
           ❌ Poche esclusive<br>
           ❌ Design sobrio`;
-        vignettaChest.style.position = 'absolute';
-        vignettaChest.style.left = `84%`;
-        vignettaChest.style.top = `91%`;
+        if (isMobile) {
+            vignettaChest.style.left = '67%';
+            vignettaChest.style.top = '85%';
+        } else {
+            vignettaChest.style.left = '83%';
+            vignettaChest.style.top = '91%';
+        }
+        
         
         document.body.appendChild(vignettaChest);
         attivoChest = true;
@@ -194,25 +204,29 @@ knight.addEventListener('click', function () {
         knight.classList.add('knight-glow');
         knight.style.filter = 'brightness(0.9) drop-shadow(0 0 10px rgba(47, 75, 113, 0.6))';
         
-        knight.style.left = isMobile ? '2%' : '52%';
-        knight.style.bottom = isMobile ? '15%' : '11%';
+        knight.style.left = isMobile ? '-7%' : '52%';
+        knight.style.bottom = isMobile ? '19%' : '11%';
         knight.style.width = isMobile ? '162px' : '220px';
         knight.style.height = isMobile ? '313px' : '389px';
         
         vignettaKnight = document.createElement('div');
         vignettaKnight.classList.add('vignetta');
-        vignettaKnight = document.createElement('div');
-        vignettaKnight.classList.add('vignetta');
-        vignettaKnight.innerHTML = `
-          <b>Nintendo Switch 2</b><br>
+        vignettaKnight.innerHTML = 
+        `<b>Nintendo Switch 2</b><br>
          ✔️ Gioco da casa e in mobilità<br>
          ✔️ Zelda, Mario, Metroid<br>
          ✔️ Divertimento immediato<br>
          ❌ Meno potente<br>
          ❌ Poco spazio interno`;
         vignettaKnight.style.position = 'absolute';
-        vignettaKnight.style.left = `44%`;
-        vignettaKnight.style.top = `91%`;
+        if(isMobile){
+            
+            vignettaKnight.style.left = `2%`;
+            vignettaKnight.style.top = `85%`;
+        } else{
+            vignettaKnight.style.left = `44%`;
+            vignettaKnight.style.top = `91%`;
+        }
         
         document.body.appendChild(vignettaKnight);
         attivoKnight = true;
