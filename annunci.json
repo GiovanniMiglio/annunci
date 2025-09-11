@@ -1,52 +1,402 @@
 [
-    { "id": 1, "titolo": "PlayStation 5", "categoria": "Videogiochi", "prezzo": 499.99, "immagine": "https://via.placeholder.com/300x200?text=PlayStation+5" },
-    { "id": 2, "titolo": "Xbox Series X", "categoria": "Videogiochi", "prezzo": 479.00, "immagine": "https://via.placeholder.com/300x200?text=Xbox+Series+X" },
-    { "id": 3, "titolo": "Nintendo Switch OLED", "categoria": "Videogiochi", "prezzo": 349.99, "immagine": "https://via.placeholder.com/300x200?text=Switch+OLED" },
-    { "id": 4, "titolo": "Funko Pop Spider-Man", "categoria": "Action Figure", "prezzo": 19.99, "immagine": "https://via.placeholder.com/300x200?text=Spider-Man" },
-    { "id": 5, "titolo": "Razer BlackWidow V3", "categoria": "Accessori Gamer", "prezzo": 129.99, "immagine": "https://via.placeholder.com/300x200?text=Razer+BlackWidow" },
-    { "id": 6, "titolo": "DualSense Controller", "categoria": "Accessori Gamer", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=DualSense" },
-    { "id": 7, "titolo": "Funko Pop Darth Vader", "categoria": "Action Figure", "prezzo": 21.50, "immagine": "https://via.placeholder.com/300x200?text=Darth+Vader" },
-    { "id": 8, "titolo": "Logitech G502 Mouse", "categoria": "Accessori Gamer", "prezzo": 59.99, "immagine": "https://via.placeholder.com/300x200?text=Logitech+G502" },
-    { "id": 9, "titolo": "Call of Duty: Modern Warfare II", "categoria": "Videogiochi", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=Modern+Warfare+II" },
-    { "id": 10, "titolo": "Funko Pop Iron Man", "categoria": "Action Figure", "prezzo": 18.99, "immagine": "https://via.placeholder.com/300x200?text=Iron+Man" },
-    { "id": 11, "titolo": "SteelSeries Arctis Nova Pro", "categoria": "Accessori Gamer", "prezzo": 249.99, "immagine": "https://via.placeholder.com/300x200?text=Arctis+Nova+Pro" },
-    { "id": 12, "titolo": "The Legend of Zelda: Tears of the Kingdom", "categoria": "Videogiochi", "prezzo": 59.99, "immagine": "https://via.placeholder.com/300x200?text=Zelda+TOTK" },
-    { "id": 13, "titolo": "Funko Pop Batman", "categoria": "Action Figure", "prezzo": 17.99, "immagine": "https://via.placeholder.com/300x200?text=Batman" },
-    { "id": 14, "titolo": "HyperX Cloud II Headset", "categoria": "Accessori Gamer", "prezzo": 89.99, "immagine": "https://via.placeholder.com/300x200?text=HyperX+Cloud+II" },
-    { "id": 15, "titolo": "Resident Evil 4 Remake", "categoria": "Videogiochi", "prezzo": 64.99, "immagine": "https://via.placeholder.com/300x200?text=RE4+Remake" },
-    { "id": 16, "titolo": "Funko Pop Goku", "categoria": "Action Figure", "prezzo": 22.99, "immagine": "https://via.placeholder.com/300x200?text=Goku" },
-    { "id": 17, "titolo": "Corsair K70 RGB Keyboard", "categoria": "Accessori Gamer", "prezzo": 139.99, "immagine": "https://via.placeholder.com/300x200?text=Corsair+K70" },
-    { "id": 18, "titolo": "FIFA 24", "categoria": "Videogiochi", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=FIFA+24" },
-    { "id": 19, "titolo": "Funko Pop Pikachu", "categoria": "Action Figure", "prezzo": 16.99, "immagine": "https://via.placeholder.com/300x200?text=Pikachu" },
-    { "id": 20, "titolo": "Elgato Stream Deck", "categoria": "Accessori Gamer", "prezzo": 149.99, "immagine": "https://via.placeholder.com/300x200?text=Stream+Deck" },
-    { "id": 21, "titolo": "Assassin's Creed Mirage", "categoria": "Videogiochi", "prezzo": 59.99, "immagine": "https://via.placeholder.com/300x200?text=AC+Mirage" },
-    { "id": 22, "titolo": "Funko Pop Venom", "categoria": "Action Figure", "prezzo": 20.99, "immagine": "https://via.placeholder.com/300x200?text=Venom" },
-    { "id": 23, "titolo": "Razer Kraken V3", "categoria": "Accessori Gamer", "prezzo": 109.99, "immagine": "https://via.placeholder.com/300x200?text=Kraken+V3" },
-    { "id": 24, "titolo": "Hogwarts Legacy", "categoria": "Videogiochi", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=Hogwarts+Legacy" },
-    { "id": 25, "titolo": "Funko Pop Captain America", "categoria": "Action Figure", "prezzo": 19.99, "immagine": "https://via.placeholder.com/300x200?text=Captain+America" },
-    { "id": 26, "titolo": "Logitech G Pro X", "categoria": "Accessori Gamer", "prezzo": 129.99, "immagine": "https://via.placeholder.com/300x200?text=G+Pro+X" },
-    { "id": 27, "titolo": "Street Fighter 6", "categoria": "Videogiochi", "prezzo": 59.99, "immagine": "https://via.placeholder.com/300x200?text=Street+Fighter+6" },
-    { "id": 28, "titolo": "Funko Pop Thor", "categoria": "Action Figure", "prezzo": 18.50, "immagine": "https://via.placeholder.com/300x200?text=Thor" },
-    { "id": 29, "titolo": "MSI Optix Gaming Monitor", "categoria": "Accessori Gamer", "prezzo": 199.99, "immagine": "https://via.placeholder.com/300x200?text=MSI+Optix" },
-    { "id": 30, "titolo": "Final Fantasy XVI", "categoria": "Videogiochi", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=FFXVI" },
-    { "id": 31, "titolo": "Funko Pop Grogu", "categoria": "Action Figure", "prezzo": 17.99, "immagine": "https://via.placeholder.com/300x200?text=Grogu" },
-    { "id": 32, "titolo": "ASUS ROG Gaming Mouse", "categoria": "Accessori Gamer", "prezzo": 79.99, "immagine": "https://via.placeholder.com/300x200?text=ROG+Mouse" },
-    { "id": 33, "titolo": "Spider-Man 2 PS5", "categoria": "Videogiochi", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=Spider-Man+2+PS5" },
-    { "id": 34, "titolo": "Halo Infinite", "categoria": "Videogiochi", "prezzo": 59.99, "immagine": "https://via.placeholder.com/300x200?text=Halo+Infinite" },
-    { "id": 35, "titolo": "Funko Pop Deadpool", "categoria": "Action Figure", "prezzo": 19.99, "immagine": "https://via.placeholder.com/300x200?text=Deadpool" },
-    { "id": 36, "titolo": "Cooler Master Gaming Chair", "categoria": "Accessori Gamer", "prezzo": 299.99, "immagine": "https://via.placeholder.com/300x200?text=Gaming+Chair" },
-    { "id": 37, "titolo": "Gran Turismo 7", "categoria": "Videogiochi", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=Gran+Turismo+7" },
-    { "id": 38, "titolo": "Funko Pop Loki", "categoria": "Action Figure", "prezzo": 18.50, "immagine": "https://via.placeholder.com/300x200?text=Loki" },
-    { "id": 39, "titolo": "Redragon K552 Keyboard", "categoria": "Accessori Gamer", "prezzo": 49.99, "immagine": "https://via.placeholder.com/300x200?text=Redragon+K552" },
-    { "id": 40, "titolo": "Elden Ring", "categoria": "Videogiochi", "prezzo": 59.99, "immagine": "https://via.placeholder.com/300x200?text=Elden+Ring" },
-    { "id": 41, "titolo": "Funko Pop The Mandalorian", "categoria": "Action Figure", "prezzo": 20.99, "immagine": "https://via.placeholder.com/300x200?text=Mandalorian" },
-    { "id": 42, "titolo": "AOC 24G2 Gaming Monitor", "categoria": "Accessori Gamer", "prezzo": 179.99, "immagine": "https://via.placeholder.com/300x200?text=AOC+24G2" },
-    { "id": 43, "titolo": "Ghost of Tsushima", "categoria": "Videogiochi", "prezzo": 49.99, "immagine": "https://via.placeholder.com/300x200?text=Ghost+of+Tsushima" },
-    { "id": 44, "titolo": "Funko Pop Wolverine", "categoria": "Action Figure", "prezzo": 19.50, "immagine": "https://via.placeholder.com/300x200?text=Wolverine" },
-    { "id": 45, "titolo": "Razer Basilisk V3", "categoria": "Accessori Gamer", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=Basilisk+V3" },
-    { "id": 46, "titolo": "Starfield", "categoria": "Videogiochi", "prezzo": 69.99, "immagine": "https://via.placeholder.com/300x200?text=Starfield" },
-    { "id": 47, "titolo": "Funko Pop Black Panther", "categoria": "Action Figure", "prezzo": 18.99, "immagine": "https://via.placeholder.com/300x200?text=Black+Panther" },
-    { "id": 48, "titolo": "Logitech G733 Headset", "categoria": "Accessori Gamer", "prezzo": 129.99, "immagine": "https://via.placeholder.com/300x200?text=G733" },
-    { "id": 49, "titolo": "Mortal Kombat 1", "categoria": "Videogiochi", "prezzo": 59.99, "immagine": "https://via.placeholder.com/300x200?text=Mortal+Kombat+1" },
-    { "id": 50, "titolo": "Funko Pop Captain Marvel", "categoria": "Action Figure", "prezzo": 19.99, "immagine": "https://via.placeholder.com/300x200?text=Captain+Marvel" }
+  {
+    "id": 1,
+    "titolo": "PlayStation 5",
+    "categoria": "Console",
+    "prezzo": 499.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Console di nuova generazione Sony con grafica 4K e SSD ultraveloce."
+  },
+  {
+    "id": 2,
+    "titolo": "Xbox Series X",
+    "categoria": "Console",
+    "prezzo": 479.00,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Console Microsoft potente con supporto fino a 120 FPS e Game Pass."
+  },
+  {
+    "id": 3,
+    "titolo": "Nintendo Switch OLED",
+    "categoria": "Console",
+    "prezzo": 349.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Versione con schermo OLED per colori più vividi e modalità portatile."
+  },
+  {
+    "id": 4,
+    "titolo": "DualSense Controller PS5",
+    "categoria": "Accessori Gamer",
+    "prezzo": 69.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Controller wireless con feedback aptico e grilletti adattivi."
+  },
+  {
+    "id": 5,
+    "titolo": "Logitech G502 HERO",
+    "categoria": "Accessori Gamer",
+    "prezzo": 59.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Mouse gaming ad alte prestazioni con sensore HERO 25K."
+  },
+  {
+    "id": 6,
+    "titolo": "Razer BlackWidow V3",
+    "categoria": "Accessori Gamer",
+    "prezzo": 129.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Tastiera meccanica con switch tattili e illuminazione RGB."
+  },
+  {
+    "id": 7,
+    "titolo": "SteelSeries Arctis Nova Pro",
+    "categoria": "Accessori Gamer",
+    "prezzo": 249.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Cuffie premium con audio ad alta fedeltà e microfono retrattile."
+  },
+  {
+    "id": 8,
+    "titolo": "Call of Duty: Modern Warfare II",
+    "categoria": "Videogiochi",
+    "prezzo": 69.99,
+    "immagine": "img/game.png",
+    "descrizione": "Sparatutto in prima persona con campagna e modalità multiplayer."
+  },
+  {
+    "id": 9,
+    "titolo": "Resident Evil 4 Remake",
+    "categoria": "Videogiochi",
+    "prezzo": 64.99,
+    "immagine": "img/game.png",
+    "descrizione": "Remake del celebre survival horror con grafica e gameplay moderni."
+  },
+  {
+    "id": 10,
+    "titolo": "The Legend of Zelda: Tears of the Kingdom",
+    "categoria": "Videogiochi",
+    "prezzo": 59.99,
+    "immagine": "img/game.png",
+    "descrizione": "Avventura open world ambientata nel regno di Hyrule."
+  },
+  {
+    "id": 11,
+    "titolo": "Funko Pop Spider-Man",
+    "categoria": "Action Figure",
+    "prezzo": 19.99,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del supereroe Marvel Spider-Man."
+  },
+  {
+    "id": 12,
+    "titolo": "Xbox Series S",
+    "categoria": "Console",
+    "prezzo": 299.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Console compatta e digitale con supporto fino a 120 FPS."
+  },
+  {
+    "id": 13,
+    "titolo": "Razer Kraken V3",
+    "categoria": "Accessori Gamer",
+    "prezzo": 109.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Cuffie gaming con audio surround e illuminazione RGB."
+  },
+  {
+    "id": 14,
+    "titolo": "Hogwarts Legacy",
+    "categoria": "Videogiochi",
+    "prezzo": 69.99,
+    "immagine": "img/game.png",
+    "descrizione": "GDR d'azione ambientato nel mondo magico di Harry Potter."
+  },
+  {
+    "id": 15,
+    "titolo": "Funko Pop Darth Vader",
+    "categoria": "Action Figure",
+    "prezzo": 21.50,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del leggendario Sith di Star Wars."
+  },
+  {
+    "id": 16,
+    "titolo": "PlayStation 5 Digital Edition",
+    "categoria": "Console",
+    "prezzo": 449.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Versione senza lettore ottico della PS5, solo giochi digitali."
+  },
+  {
+    "id": 17,
+    "titolo": "Razer Kraken V3",
+    "categoria": "Accessori Gamer",
+    "prezzo": 109.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Cuffie gaming con audio surround e illuminazione RGB."
+  },
+  {
+    "id": 18,
+    "titolo": "Hogwarts Legacy",
+    "categoria": "Videogiochi",
+    "prezzo": 69.99,
+    "immagine": "img/game.png",
+    "descrizione": "GDR d'azione ambientato nel mondo magico di Harry Potter."
+  },
+  {
+    "id": 19,
+    "titolo": "Funko Pop Iron Man",
+    "categoria": "Action Figure",
+    "prezzo": 18.99,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del supereroe Marvel Iron Man."
+  },
+  {
+    "id": 20,
+    "titolo": "Xbox Series X Halo Edition",
+    "categoria": "Console",
+    "prezzo": 499.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Edizione speciale della Xbox Series X ispirata a Halo."
+  },
+  {
+    "id": 21,
+    "titolo": "Logitech G Pro X",
+    "categoria": "Accessori Gamer",
+    "prezzo": 129.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Cuffie gaming professionali con microfono Blue VO!CE e audio nitido."
+  },
+  {
+    "id": 22,
+    "titolo": "FIFA 24",
+    "categoria": "Videogiochi",
+    "prezzo": 69.99,
+    "immagine": "img/game.png",
+    "descrizione": "Simulatore calcistico con licenze ufficiali e modalità carriera aggiornata."
+  },
+  {
+    "id": 23,
+    "titolo": "Funko Pop Batman",
+    "categoria": "Action Figure",
+    "prezzo": 19.50,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del Cavaliere Oscuro di Gotham City."
+  },
+  {
+    "id": 24,
+    "titolo": "Nintendo Switch Lite",
+    "categoria": "Console",
+    "prezzo": 219.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Versione compatta e leggera della Nintendo Switch, solo portatile."
+  },
+  {
+    "id": 25,
+    "titolo": "Corsair K70 RGB",
+    "categoria": "Accessori Gamer",
+    "prezzo": 139.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Tastiera meccanica premium con retroilluminazione RGB personalizzabile."
+  },
+  {
+    "id": 26,
+    "titolo": "Assassin's Creed Mirage",
+    "categoria": "Videogiochi",
+    "prezzo": 59.99,
+    "immagine": "img/game.png",
+    "descrizione": "Avventura stealth ambientata a Baghdad durante l'età d'oro islamica."
+  },
+  {
+    "id": 27,
+    "titolo": "Funko Pop Goku",
+    "categoria": "Action Figure",
+    "prezzo": 17.99,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del protagonista di Dragon Ball."
+  },
+  {
+    "id": 28,
+    "titolo": "PlayStation 4 Slim",
+    "categoria": "Console",
+    "prezzo": 299.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Versione sottile e silenziosa della PS4, ideale per il gaming in Full HD."
+  },
+  {
+    "id": 29,
+    "titolo": "HyperX Cloud II",
+    "categoria": "Accessori Gamer",
+    "prezzo": 89.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Cuffie da gioco con audio surround virtuale 7.1 e comfort prolungato."
+  },
+  {
+    "id": 30,
+    "titolo": "Elden Ring",
+    "categoria": "Videogiochi",
+    "prezzo": 59.99,
+    "immagine": "img/game.png",
+    "descrizione": "GDR open world creato da FromSoftware in collaborazione con George R.R. Martin."
+  },
+  {
+    "id": 31,
+    "titolo": "Funko Pop Yoda",
+    "categoria": "Action Figure",
+    "prezzo": 16.99,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del Maestro Jedi di Star Wars."
+  },
+  {
+    "id": 32,
+    "titolo": "Xbox One X",
+    "categoria": "Console",
+    "prezzo": 349.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Console Microsoft con supporto 4K e prestazioni elevate."
+  },
+  {
+    "id": 33,
+    "titolo": "Razer DeathAdder V2",
+    "categoria": "Accessori Gamer",
+    "prezzo": 69.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Mouse ergonomico con sensore ottico Focus+ da 20.000 DPI."
+  },
+  {
+    "id": 34,
+    "titolo": "Cyberpunk 2077",
+    "categoria": "Videogiochi",
+    "prezzo": 49.99,
+    "immagine": "img/game.png",
+    "descrizione": "GDR futuristico ambientato a Night City, ricco di missioni e personalizzazioni."
+  },
+  {
+    "id": 35,
+    "titolo": "Funko Pop Thor",
+    "categoria": "Action Figure",
+    "prezzo": 18.50,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del Dio del Tuono dell'universo Marvel."
+  },
+  {
+    "id": 36,
+    "titolo": "PlayStation 3",
+    "categoria": "Console",
+    "prezzo": 199.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Storica console Sony con un vasto catalogo di giochi."
+  },
+  {
+    "id": 37,
+    "titolo": "Logitech G733",
+    "categoria": "Accessori Gamer",
+    "prezzo": 149.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Cuffie wireless leggere con illuminazione RGB e audio immersivo."
+  },
+  {
+    "id": 38,
+    "titolo": "Funko Pop Captain America",
+    "categoria": "Action Figure",
+    "prezzo": 18.99,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del supereroe Marvel Captain America."
+  },
+  {
+    "id": 39,
+    "titolo": "Xbox Series X Controller",
+    "categoria": "Accessori Gamer",
+    "prezzo": 59.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Controller wireless ufficiale per Xbox Series X e PC."
+  },
+  {
+    "id": 40,
+    "titolo": "Gran Turismo 7",
+    "categoria": "Videogiochi",
+    "prezzo": 69.99,
+    "immagine": "img/game.png",
+    "descrizione": "Simulatore di guida realistico con centinaia di auto e circuiti."
+  },
+  {
+    "id": 41,
+    "titolo": "PlayStation 2",
+    "categoria": "Console",
+    "prezzo": 149.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Storica console Sony con un vastissimo catalogo di giochi."
+  },
+  {
+    "id": 42,
+    "titolo": "Funko Pop Wonder Woman",
+    "categoria": "Action Figure",
+    "prezzo": 17.50,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile dell'eroina DC Comics Wonder Woman."
+  },
+  {
+    "id": 43,
+    "titolo": "Razer Huntsman Elite",
+    "categoria": "Accessori Gamer",
+    "prezzo": 179.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Tastiera meccanica con switch ottici e poggiapolsi magnetico."
+  },
+  {
+    "id": 44,
+    "titolo": "Super Mario Odyssey",
+    "categoria": "Videogiochi",
+    "prezzo": 59.99,
+    "immagine": "img/game.png",
+    "descrizione": "Avventura platform 3D con Mario in un viaggio intorno al mondo."
+  },
+  {
+    "id": 45,
+    "titolo": "Nintendo Wii",
+    "categoria": "Console",
+    "prezzo": 129.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Console Nintendo con comandi di movimento innovativi."
+  },
+  {
+    "id": 46,
+    "titolo": "Funko Pop Hulk",
+    "categoria": "Action Figure",
+    "prezzo": 19.99,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del gigante verde Marvel Hulk."
+  },
+  {
+    "id": 47,
+    "titolo": "Logitech G29 Driving Force",
+    "categoria": "Accessori Gamer",
+    "prezzo": 249.99,
+    "immagine": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvEtMr0mSi27zd1cDDmYT8q_osxUXKsakCg&s",
+    "descrizione": "Volante da corsa con pedali per PS5, PS4 e PC."
+  },
+  {
+    "id": 48,
+    "titolo": "The Last of Us Part II",
+    "categoria": "Videogiochi",
+    "prezzo": 59.99,
+    "immagine": "img/game.png",
+    "descrizione": "Avventura d'azione narrativa ambientata in un mondo post-apocalittico."
+  },
+  {
+    "id": 49,
+    "titolo": "Sega Mega Drive Mini",
+    "categoria": "Console",
+    "prezzo": 89.99,
+    "immagine": "https://immagini.trovaprezzi.it/guide-acquisto/4669/migliori_console_giochi.jpg",
+    "descrizione": "Mini console retrò con giochi classici preinstallati."
+  },
+  {
+    "id": 50,
+    "titolo": "Funko Pop Black Panther",
+    "categoria": "Action Figure",
+    "prezzo": 18.99,
+    "immagine": "https://img.kwcdn.com/product/fancy/f9a61a46-67a3-4d77-832c-f656e9eedd90.jpg?imageView2/2/w/800/q/70/format/webp",
+    "descrizione": "Action figure in vinile del supereroe Marvel Black Panther."
+  }
 ]

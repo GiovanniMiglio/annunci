@@ -1,0 +1,164 @@
+/* variabili */
+:root {
+  --ds-english-violet: rgb(71, 64, 93);
+  --ds-rosso-scuro: rgb(89, 35, 9);
+  --rosso-sangue: rgb(80, 0, 0);
+  --rosso-vivo: rgb(139, 0, 0);
+  --rosso-brillante: rgb(178, 34, 34);
+  --ds-sinopia: rgb(210, 71, 21);
+  --ds-tigers-eye: rgb(221, 128, 54);
+  --ds-fawn: rgb(221, 175, 114);
+  --ds-police-blue: rgb(47, 75, 113);
+  --ds-police-blue-trasp: rgb(47, 75, 113, 0.2);
+  --ds-sabbia: rgb(239, 228, 176);
+  --ds-bianco-sporco: rgba(223, 223, 222, 0.947);
+  --ds-bianco-porcellana: rgb(255, 252, 243);
+  --ds-nero: rgb(27, 17, 13);
+  --ds-grigio: rgb(100, 107, 117);
+  --ds-blu-grigio: rgb(105, 123, 134);
+  --ds-marrone: rgb(105, 84, 66);
+  --ds-marrone-scuro: rgb(56, 50, 43);
+  --ds-verde-scuro: rgb(20, 31, 37);
+  --ds-verde: rgb(94, 121, 78);
+  --ds-oro: rgb(218, 165, 32);
+}
+.metal-textsangue {
+
+  background: linear-gradient(135deg, #bfa25c, #a84a14, #b97a2c, #bfa25c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@font-face {
+  font-family: 'Optimus Princeps';
+  src: url('font/OPTIMUSPRINCEPS.TTF') format('truetype');
+}
+
+
+body {
+  background-color: var(--ds-bianco-sporco);
+  color: var(--ds-nero);
+  font-family: 'Optimus Princeps', serif;
+}
+
+/* navbar */
+.bgnavcustom {
+  color: var(--ds-bianco-sporco);
+  background-image: url("./img/ds3sfondo.jpg");
+  height: 300px;
+  background-size: 100% 280%;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  overflow: hidden;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 2.5s ease-in-out, background-image 2.5s ease-in-out, height 2.5s ease-in-out;
+}
+
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.bgnavcustom::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./img/sfondonavscorrimento.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.0s;
+  pointer-events: none;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.bgnavcustom.scrolled::after {
+  opacity: 1;
+}
+
+.bgnavcustom > * {
+  position: relative;
+  z-index: 1;
+}
+/* metal text */
+.metal-text {
+  background: linear-gradient(135deg, rgb(74,74,74), rgb(110,110,110), rgb(160,160,160), rgb(58,58,58));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgb(34, 34, 34), 2px 2px 4px rgb(68, 68, 68), 0 0 6px rgba(118, 118, 118, 0.6), 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+.bgnavcustom.scrolled {
+  background-image: url(./img/sfondonavscorrimento.jpg);
+  color: var(--ds-bianco-porcellana);
+  height: 300px;
+  background-size: 107% 186%;
+  background-repeat: no-repeat;
+  background-position: center 63%;
+  transform: scaleY(1);
+}
+
+a .bgnavcustom {
+  color: var(--ds-bianco-sporco);
+}
+
+.bgnavcustom .nav-link.active {
+  color: var(--ds-bianco-sporco);
+}
+
+
+
+.navbar-nav .nav-link:hover {
+  color: rgb(var(--rosso-vivo));
+  text-shadow: rgba(var(), 0.8) 0 0 5px, rgba(var(--rosso-brillante), 0.6) 0 0 15px, rgba(var(--rosso-sangue), 0.4) 0 0 30px;
+  font-weight: bold;
+  animation: darkSoulsPulse 1s infinite;
+}
+
+@keyframes darkSoulsPulse {
+  0%, 100% {
+    text-shadow: rgba(139, 0, 0, 1) 0 0 5px, rgba(178, 34, 34, 0.868) 0 0 15px, rgba(80, 0, 0, 0.6) 0 0 30px;
+  }
+  50% {
+    text-shadow: rgba(139, 0, 0, 1) 0 0 8px, rgba(178, 34, 34, 0.868) 0 0 20px, rgba(80, 0, 0, 0.8) 0 0 40px;
+  }
+}
+
+.navbar-nav {
+  background-color: var(--ds-police-blue-trasp);
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(71, 64, 93, 0.0) 0%, rgba(71, 64, 93, 0.2) 50%, rgba(71, 64, 93, 0.0) 100%);
+  font-size: xxx-large;
+}
+
+.logo {
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(71, 64, 93, 0) 0%, rgba(71, 64, 93, 0.1) 50%, rgba(71, 64, 93, 0) 100%),
+  linear-gradient(to bottom, rgba(71, 64, 93, 0) 0%, rgba(71, 64, 93, 0.1) 50%, rgba(71, 64, 93, 0) 100%);
+  padding: 6px;
+}
+
+/* media nav */
+@media (max-width: 768px) {
+  .navbar-nav {
+    font-size: medium;
+  }
+  .ghost {
+    display: none;
+  }
+  nav.navbar {
+    width: 100%;
+  }
+  .bgnavcustom {
+    height: 200px;
+    background-size: 100% 100%;
+  }
+  .bgnavcustom.scrolled {
+    height: 200px;
+    background-size: 100% 100%;
+  }
+}

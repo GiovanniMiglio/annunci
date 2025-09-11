@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Annunci</title>
+	<link rel="icon" type="image/x-icon" href="img/logo ok.png">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="annunci.css">
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-light p-0 bgnavcustom sticky-top">
+		<div class="container-fluid">
+			<div class="logo">
+				<img src="img/logo ok.png" alt="Logo" width="100" height="104" class="d-inline-block align-text-top">
+			</div>
+			<ul class="navbar-nav d-flex flex-row justify-content-center align-items-center mx-auto ">
+				<li class="nav-item mx-2">
+					<a class="nav-link active metal-text fw-bold" aria-current="page" href="home.html">Home</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link active metal-text fw-bold" href="annunci.html">Annunci</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link active metal-text fw-bold " href="chisono.html">Il Custode del Falo'</a>
+				</li>
+			</ul>
+			<div class="ghost" style="width:100px; height:104px;"></div>
+		</div>
+		<div id="bordo-inf-navbar" class="bordo-inferiore-navbar"></div>
+	</nav>
+	<!-- sezione annunci -->
+	<div class="annunci-bg">
+		
+		<!-- header annunci -->
+		<header class="py-5 text-center">
+			<div class="container">
+				<h1 class="metal-textsangue mb-3">Annunci</h1>
+				<p class="text-muted metal-textsangue">Sfoglia o cerca tra gli annunci.</p>
+			</div>
+		</header>
+		
+		<!-- filtri -->
+		<section class="py-3">
+			<div class="container">
+				<div class="row g-2 align-items-end">
+					<div class="col-12 col-md-6">
+						<label for="search" class="form-label">Cerca</label>
+						<input id="search" type="text" class="form-control" placeholder="Cerca per titolo o descrizione...">
+					</div>
+					<div class="col-6 col-md-3">
+						<label for="categoria" class="form-label">Categoria</label>
+						<select id="categoria" class="form-select">
+							<option value="">Tutte</option>
+							
+						</select>
+					</div>
+					<div class="col-6 col-md-3">
+						<label for="ordine" class="form-label">Ordina per</label>
+						<div class="input-group">
+							<select id="ordine" class="form-select">
+								<option value="">Seleziona</option>
+								<option value="prezzo">Prezzo specifico</option>
+								<option value="prezzoAsc">Prezzo crescente</option>
+								<option value="prezzoDesc">Prezzo decrescente</option>
+							</select>
+							<input id="prezzo" type="number" class="form-control" placeholder="Inserisci il prezzo..." style="display:none;">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mt-4">
+				<div class="row justify-content-center text-center">
+					<div class="col-12 col-md-4 mb-2">
+						<button id="reset-filtri" class="btn btn-outline-secondary w-100">🔄 Reset filtri</button>
+					</div>
+					<div class="col-12 col-md-4">
+						<button id="crea-annuncio" class="btn btn-outline-success w-100">📝 Crea il tuo annuncio</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- griglia annunci -->
+		<main class="py-4">
+			<div class="container">
+				<div class="row g-4 " id="annunci-grid">
+					<!-- Card esempio 1 -->
+					<!-- 
+					Card esempio 1
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card ds-card h-100 shadow-sm">
+							<img src="img/sfondo.png" class="card-img-top" alt="Annuncio 1">
+							<div class="card-body">
+								<h5 class="card-title">Nintendo Switch OLED</h5>
+								<p class="card-text text-muted">Perfetta, con Joy-Con inclusi. Consegna a mano.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<span class="fw-bold">290€</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					Card esempio 2
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card ds-card h-100 shadow-sm">
+							<img src="img/sfondo.png" class="card-img-top" alt="Annuncio 2">
+							<div class="card-body">
+								<h5 class="card-title">PS5 + 2 controller</h5>
+								<p class="card-text text-muted">Come nuova, usata poco. Scatola originale.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<span class="fw-bold">450€</span>
+									<a href="#" class="btn btn-sm btn-outline-primary">Dettagli</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					Card esempio 3
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card ds-card h-100 shadow-sm">
+							<img src="img/sfondo.png" class="card-img-top" alt="Annuncio 3">
+							<div class="card-body">
+								<h5 class="card-title">Manga One Piece lotto</h5>
+								<p class="card-text text-muted">Volumi 1-20 in ottime condizioni.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<span class="fw-bold">120€</span>
+									<a href="#" class="btn btn-sm btn-outline-primary">Dettagli</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					Altre card segnaposto
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card ds-card h-100 shadow-sm">
+							<img src="img/sfondo.png" class="card-img-top" alt="Annuncio 4">
+							<div class="card-body">
+								<h5 class="card-title">Xbox Series X</h5>
+								<p class="card-text text-muted">SSD 1TB, perfetta per Game Pass.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<span class="fw-bold">420€</span>
+									<a href="#" class="btn btn-sm btn-outline-primary">Dettagli</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card ds-card h-100 shadow-sm">
+							<img src="img/sfondo.png" class="card-img-top" alt="Annuncio 5">
+							<div class="card-body">
+								<h5 class="card-title">Controller Elite</h5>
+								<p class="card-text text-muted">Personalizzato, praticamente nuovo.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<span class="fw-bold">120€</span>
+									<a href="#" class="btn btn-sm btn-outline-primary">Dettagli</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card ds-card h-100 shadow-sm">
+							<img src="img/sfondo.png" class="card-img-top" alt="Annuncio 6">
+							<div class="card-body">
+								<h5 class="card-title">The Legend of Zelda</h5>
+								<p class="card-text text-muted">Edizione speciale, completo di tutto.</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<span class="fw-bold">60€</span>
+									<a href="#" class="btn btn-sm btn-outline-primary">Dettagli</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</main>
+		
+	</div>
+	<!-- footer -->
+	<footer class="footer-custom bg-dark py-5">
+		<div class="container text-center">
+			<h2 class="text-uppercase mb-3">Bonfire Board</h2>
+			<p class="fst-italic">"Riposa qui, viandante stanco. La fiamma ancora arde."</p>
+			<div class="my-4">
+				<p>Email: <a href="mailto:bonfire@board.com" class="email-custom text-decoration-none">bonfire@board.com</a></p>
+				<p>Tel: <span>+39 333 123 4567</span></p>
+			</div>
+			<div class="d-flex justify-content-center gap-3 mb-3">
+				<a href="https://facebook.com/bonfireboard" target="_blank" class="btn-custom btn btn-outline-warning btn-sm">🛡️ Facebook</a>
+				<a href="https://instagram.com/bonfireboard" target="_blank" class="btn-custom btn btn-outline-warning btn-sm">🔥 Instagram</a>
+				<a href="https://twitter.com/bonfireboard" target="_blank" class="btn-custom btn btn-outline-warning btn-sm">🕊️ Twitter</a>
+			</div>
+			<p class="fst-italic opacity-75">"Che le fiamme ti guidino."</p>
+		</div>
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	<script src="annunci.js"></script>
+</body>
+</html>

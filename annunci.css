@@ -20,6 +20,14 @@
   --ds-marrone-scuro: rgb(56, 50, 43);
   --ds-verde-scuro: rgb(20, 31, 37);
   --ds-verde: rgb(94, 121, 78);
+  --ds-oro: rgb(218, 165, 32);
+}
+.metal-textsangue {
+
+  background: linear-gradient(135deg, #bfa25c, #a84a14, #b97a2c, #bfa25c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @font-face {
@@ -102,20 +110,7 @@ a .bgnavcustom {
   color: var(--ds-bianco-sporco);
 }
 
-.bordo-inferiore-navbar {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: url('./img/bordo-inferiore.png') center no-repeat;
-  background-size: 100% 100%;
-  z-index: 1010;
-  pointer-events: none;
-  display: none;
-}
+
 
 .navbar-nav .nav-link:hover {
   color: rgb(var(--rosso-vivo));
@@ -147,10 +142,10 @@ a .bgnavcustom {
   padding: 6px;
 }
 
-/* media navbar */
-@media (max-width: 600px) {
-  ul {
-    font-size: large;
+/* media nav */
+@media (max-width: 768px) {
+  .navbar-nav {
+    font-size: medium;
   }
   .ghost {
     display: none;
@@ -167,196 +162,84 @@ a .bgnavcustom {
     background-size: 100% 100%;
   }
 }
-
-/* sezione chi sono */
-body {
-  margin: 0;
-  font-family: 'Optimus Princeps', sans-serif;
-  background: url('/img/sfondomenu.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 300px;
+/* sezione annunci */
+.annunci-bg {
+ background-image: url("./img/sfondoannunci.png");
+ background-size: 100% 100%;
+ background-position: center;
 }
-
-.header-section {
-  min-height: 19vh;
-}
-
-.container-chi-sono .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  padding: 50px;
-  max-width: 1400px;
-  margin: auto;
-  gap: 30px;
+/* Sfondo personalizzato per le card Annunci */
+.ds-card {
   position: relative;
+  background-color: transparent;
+  border: none;
+  background-image: url('img/annunci-card-bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 14px; 
+  color: rgb(234, 231, 223);
+}
+
+.ds-card .card-body {
+  background: rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%);
+  border-radius: 10px;
+  border: 1px solid rgba(226, 199, 146, 0.25);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
   color: var(--ds-bianco-sporco);
+  transition: background .25s ease, border-color .25s ease;
 }
 
-.left,
-.right {
-  border-radius: 12px;
-  padding: 30px;
+.ds-card:hover .card-body {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: var(--rosso-sangue);
+  margin-top: 4px;
+  scale: 1.05;
 }
 
-.left h1,
-.right h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: var(--ds-rosso-vivo);
-  text-shadow: 0 0 10px var(--ds-rosso-brillante);
+.ds-card .card-title {
+  color: var(--ds-english-violet);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-.left {
-  position: absolute;
-  top: 140%;
-  left: -12%;
-  width: 63%;
-  border: 2px solid var(--ds-verde);
-  box-shadow: 0 0 25px var(--ds-verde-scuro);
-  z-index: 10;
-  overflow: visible;
+.ds-card .card-text,
+.ds-card .text-muted {
+  color: var(--ds-fawn)!important;
 }
 
-.right {
-  border: 2px solid var(--ds-english-violet);
-  box-shadow: 0 0 15px var(--ds-english-violet);
-  width: 55%;
-  right: -12%;
-  position: absolute;
-  top: 140%;
-}
-
-h2,
-h3 {
+.ds-card .fw-bold {
   color: var(--ds-sinopia);
-
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-ul {
-  padding-left: 20px;
-  list-style-type: square;
-  font-size: medium;
+.ds-card .btn-outline-primary {
+  color: var(--ds-oro);
+  border-color: var(--ds-oro);
 }
 
-em {
-  color: var(--ds-sabbia);
+.ds-card .btn-outline-primary:hover {
+  background-color: var(--ds-oro);
+  color: var(--ds-nero);
+  border-color: var(--ds-oro);
 }
 
-strong {
-  color: var(--ds-bianco-sporco);
-}
-
-p {
-  line-height: 1.6;
-}
-
-
-.metal-textsangue {
-
-  background: linear-gradient(135deg, #bfa25c, #a84a14, #b97a2c, #bfa25c);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes flamePulse {
-  0% {
-    box-shadow: 0 0 5px var(--ds-rosso-vivo);
-    opacity: 0.8;
-  }
-  50% {
-    box-shadow: 0 0 20px var(--ds-rosso-brillante);
-    opacity: 1;
-  }
-  100% {
-    box-shadow: 0 0 5px var(--ds-rosso-vivo);
-    opacity: 0.8;
-  }
-}
-
-/* media chi sono */
-@media (max-width: 768px) {
-  .left,
-  .right {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    width: 100% !important;
-    margin-bottom: 0px;
-    margin-top: 100px;
-  }
-  .right {
-    margin-top: 10px;
-  }
-  .divider {
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin: 20px 0;
-    background: linear-gradient(to right, var(--ds-sinopia), var(--rosso-brillante));
-    box-shadow: 0 0 10px var(--rosso-brillante);
-  }
-  .container-chi-sono .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  body {
-    background-size: auto 120%;
-    background-position-y: 0%;
-    font-size: 90%;
-  }
-
-}
-@media only screen and (min-width: 768px) and (max-width: 1324px) {
-  .container-chi-sono .container {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    gap: 20px;
-  }
-  .left,
-  .right {
-    position: static !important;
-    width: 100% !important;
-    margin-top: 40px;
-    box-shadow: none;
-  }
-  .divider {
-    display: none !important;
-  }
-  .header-title {
-    font-size: 3em;
-    text-align: center;
-  }
-  body {
-    font-size: 95%;
-    background-position-y: 200px;
-    background-size: 192% 170%;
-  }
-
+.ds-card .card-img-top {
+  border-radius: 6px;
 }
 /* footer */
 .footer-custom {
-  background-image: url(./img/sfondofooterchisono.png);
-  background-position:top;
+  background-image: url(img/sfondofooterchisono.png);
   background-size: 100% 100%;
-  background-repeat: no-repeat;
-  filter: brightness(0.9);
+  background-position: center;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  position: absolute;
+  position: relative;
   z-index: 1;
   color: var(--ds-fawn);
-  bottom: -100%;
   width: 100%;
-}
-.container-footer-custom {
-  margin-top: 30px;
 }
 .email-custom {
   color: var(--ds-sinopia);
@@ -377,9 +260,4 @@ p {
   color: var(--ds-bianco-sporco);
   border-color: var(--rosso-brillante);
   text-decoration: none;
-}
-@media (max-width: 600px) {
-  .footer-custom {
-    position: static;
-  }
 }

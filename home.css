@@ -166,7 +166,7 @@ ul {
 /* media nav */
 @media (max-width: 600px) {
   ul {
-    font-size: large;
+    font-size: medium;
   }
   .ghost {
     display: none;
@@ -380,6 +380,10 @@ ul {
   }
   .hero-subtitle {
     font-size: 1.3rem;
+
+  }
+.hero-description {
+    font-size: 1.2rem;
     margin-bottom: 8rem;
   }
   .vignetta{
@@ -479,11 +483,44 @@ ul {
     
     background-image: none;
     width: 100%;
-    left: -7%;
+    left: -10%;
     margin-bottom: 20px;
     
   }
   .rune-section {
     background-size: 112% 114%;
   }
+}
+/* footer */
+.footer-custom {
+  background-image: url(img/sfondofooterchisono.png);
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+  color: var(--ds-fawn);
+  width: 100%;
+}
+.email-custom {
+  color: var(--ds-sinopia);
+
+}
+.btn-custom {
+  background-color: var(--ds-rosso-vivo);
+  color: var(--ds-fawn);
+  border-color: var(--rosso-sangue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: var(--rosso-sangue);
+  color: var(--ds-bianco-sporco);
+  border-color: var(--rosso-brillante);
+  text-decoration: none;
 }
