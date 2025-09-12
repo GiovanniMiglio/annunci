@@ -162,3 +162,96 @@ a .bgnavcustom {
     background-size: 100% 100%;
   }
 }
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.annunci-bg {
+  background-image: url("./img/sfondoandre.png");
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 50px 0;
+  min-height: calc(100vh - 70px - 40px); /* Altezza minima per coprire la viewport meno navbar e footer */
+}
+
+.fabbro-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.andre {
+  position: absolute;
+  width: 230%;
+  height: 230%;
+  top: 15%;
+  left: 11%;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+#andre-up {
+  opacity: 1;
+  z-index: 3;
+  transform: translateY(0);
+}
+
+#andre-down {
+  opacity: 0;
+  z-index: 2;
+  transform: translateY(1px);
+   transition: opacity 0.1s ease-in-out;
+}
+
+#andre-down.bagliore {
+  animation: bagliore-incudine 0.3s ease;
+}
+@keyframes bagliore-incudine {
+  0% {
+    filter: brightness(1.5);
+  }
+  50% {
+    filter: brightness(2);
+  }
+  100% {
+    filter: brightness(1.5);
+  }
+  
+}
+#andre-up, #andre-down {
+  transition: opacity 0.1s linear, transform 0.1s linear;
+}
+
+/* footer */
+.footer-custom {
+  background-image: url(img/sfondofooterchisono.png);
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+  color: var(--ds-fawn);
+  width: 100%;
+}
+.email-custom {
+  color: var(--ds-sinopia);
+
+}
+.btn-custom {
+  background-color: var(--ds-rosso-vivo);
+  color: var(--ds-fawn);
+  border-color: var(--rosso-sangue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+  background-color: var(--rosso-sangue);
+  color: var(--ds-bianco-sporco);
+  border-color: var(--rosso-brillante);
+  text-decoration: none;
+}

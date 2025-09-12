@@ -40,6 +40,10 @@ fetch('annunci.json')
 .then(data => {
   let annunciData = [];
   annunciData = data;
+  const annunciSalvati = JSON.parse(localStorage.getItem("annunci")) || [];
+  annunciData = [...annunciData, ...annunciSalvati];
+
+
   function aggiornaAnnunci() {
     const filtroTesto = document.querySelector('#search').value.toLowerCase();
     const categoriaSelezionata = document.querySelector('#categoria').value;

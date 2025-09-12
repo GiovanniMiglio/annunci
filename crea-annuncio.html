@@ -32,7 +32,78 @@
 		</div>
 		<div id="bordo-inf-navbar" class="bordo-inferiore-navbar"></div>
 	</nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-	<script src="crea-annuncio.js"></script>
-</body>
-</html>
+	<!-- sezione crea annuncio -->
+	<div class="annunci-bg">
+		<div class="container py-5 my-4">
+			<div class="row">
+				<div class="col-12 col-md-6 ">
+					<h1 class="text-center metal-textsangue mb-4">Crea un Annuncio</h1>
+					<form id="crea-annuncio-form" class="bg-light p-4 rounded shadow">
+						<div class="mb-3">
+							<label for="titolo" class="form-label">Titolo</label>
+							<input type="text" class="form-control" id="titolo" placeholder="Inserisci il titolo dell'annuncio" required>
+						</div>
+						<div class="mb-3">
+							<label for="descrizione" class="form-label">Descrizione</label>
+							<textarea class="form-control" id="descrizione" rows="4" placeholder="Descrivi il tuo annuncio" required></textarea>
+						</div>
+						<div class="mb-3">
+							<label for="categoria" class="form-label">Categoria</label>
+							<select class="form-select" id="categoria" required>
+								<option value="" disabled selected>Seleziona una categoria</option>
+								<option value="accessori">Accessori</option>
+								<option value="console">Console</option>
+								<option value="action-figure">Action Figure</option>
+								<option value="videogiochi">Videogiochi</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label for="prezzo" class="form-label">Prezzo</label>
+							<input type="text" class="form-control" id="prezzo" placeholder="Inserisci il prezzo dell'annuncio" required>
+						</div>
+						<div class="mb-3">
+							<label for="immagine" class="form-label">URL Immagine</label>
+							<input type="url" class="form-control" id="immagine" placeholder="Inserisci l'URL dell'immagine" required>
+						</div>
+						<button type="submit" class="btn btn-primary w-100">Pubblica Annuncio</button>
+					</form>
+					<div id="success-message" class="alert alert-success d-none" role="alert">
+						Annuncio pubblicato con successo!
+					</div>
+				</div>
+				<div class="col-12 col-md-6  mt-3">
+					<div class="fabbro-container">
+						<img id="andre-up" class="andre" src="img/Andrefabbro.png" alt="Andre con martello alzato">
+						<img id="andre-down" class="andre" src="img/Andrefabbrobracciosteso.png" alt="Andre che colpisce">
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- Footer -->
+			<footer class="footer-custom bg-dark py-5">
+				<div class="container text-center">
+					<h2 class="text-uppercase mb-3">Bonfire Board</h2>
+					<p class="fst-italic">"Riposa qui, viandante stanco. La fiamma ancora arde."</p>
+					<div class="my-4">
+						<p>Email: <a href="mailto:bonfire@board.com" class="email-custom text-decoration-none">bonfire@board.com</a></p>
+						<p>Tel: <span>+39 333 123 4567</span></p>
+					</div>
+					<div class="d-flex justify-content-center gap-3 mb-3">
+						<a href="https://facebook.com/bonfireboard" target="_blank" class="btn-custom btn btn-outline-warning btn-sm">🛡️ Facebook</a>
+						<a href="https://instagram.com/bonfireboard" target="_blank" class="btn-custom btn btn-outline-warning btn-sm">🔥 Instagram</a>
+						<a href="https://twitter.com/bonfireboard" target="_blank" class="btn-custom btn btn-outline-warning btn-sm">🕊️ Twitter</a>
+					</div>
+					<p class="fst-italic opacity-75">"Che le fiamme ti guidino."</p>
+				</div>
+			</footer>
+			
+			
+			
+			
+			<!-- Bootstrap JS -->
+			
+			
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+			<script src="crea-annuncio.js"></script>
+		</body>
+		</html>

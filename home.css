@@ -1,3 +1,4 @@
+/* variabilli */
 :root {
   --ds-english-violet: rgb(71, 64, 93);
   --ds-rosso-scuro: rgb(89, 35, 9);
@@ -211,6 +212,7 @@ ul {
 .hero-content {
   position: relative; 
   z-index: 1;
+  top:0%;
 }
 .hero-title {
   font-size: 4rem;
