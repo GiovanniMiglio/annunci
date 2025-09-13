@@ -116,11 +116,11 @@ a .bgnavcustom {
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgb(var(--rosso-vivo));
+  color: rgb(139, 0, 0);
   text-shadow:
-  rgba(var(), 0.8) 0 0 5px,
-  rgba(var(--rosso-brillante), 0.6) 0 0 15px,
-  rgba(var(--rosso-sangue), 0.4) 0 0 30px;
+    rgba(139, 0, 0, 0.8) 0 0 5px,
+    rgba(178, 34, 34, 0.6) 0 0 15px,
+    rgba(80, 0, 0, 0.4) 0 0 30px;
   font-weight: bold;
   animation: darkSoulsPulse 1s infinite;
 }
@@ -424,6 +424,14 @@ ul {
   z-index: 1;
 }
 /* articoli */
+.bg-shadow-custom {
+  background: rgba(0, 0, 0, 0.131);
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%);
+  
+  padding: 8px 16px;
+  border-radius: 8px;
+}
 .rune-section {
   background: url('img/bordo-rune.png') center center no-repeat;
   background-size: 113% 107%;
@@ -438,14 +446,24 @@ ul {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  
   color: var(--ds-bianco-sporco);
   margin-top: 0px;
   
 }
-.articolo * {
-  background-color: rgba(4, 3, 3, 0.1);
+.articolo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(4, 3, 3, 0.5); /* il tuo effetto scuro */
+  z-index: 1;
 }
+
+.articolo > * {
+  position: relative;
+  z-index: 2;
+
+}
+
 
 .articolo h1, .articolo h2, .articolo h3, .articolo h4, .articolo h5, .articolo h6 {
   color: rgb(190, 78, 2);

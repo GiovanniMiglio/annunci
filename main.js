@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     bodyiniziale.classList.add("bodybg");
                     bodyiniziale.innerHTML=""
                     let logo = document.createElement("img");
-                    logo.src = "img/logo ok.png";
+                    logo.src = "img/logo-ok.png";
                     logo.alt = "Logo";
                     logo.classList.add("img-fluid", "d-block", "mx-auto", "w-25", "mt-5");
                     bodyiniziale.appendChild(logo);

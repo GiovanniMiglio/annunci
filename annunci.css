@@ -23,7 +23,7 @@
   --ds-oro: rgb(218, 165, 32);
 }
 .metal-textsangue {
-
+  
   background: linear-gradient(135deg, #bfa25c, #a84a14, #b97a2c, #bfa25c);
   -webkit-background-clip: text;
   background-clip: text;
@@ -113,8 +113,8 @@ a .bgnavcustom {
 
 
 .navbar-nav .nav-link:hover {
-  color: rgb(var(--rosso-vivo));
-  text-shadow: rgba(var(), 0.8) 0 0 5px, rgba(var(--rosso-brillante), 0.6) 0 0 15px, rgba(var(--rosso-sangue), 0.4) 0 0 30px;
+  color: rgb(139, 0, 0);
+  text-shadow: rgba(139, 0, 0, 0.8) 0 0 5px, rgba(178, 34, 34, 0.6) 0 0 15px, rgba(80, 0, 0, 0.4) 0 0 30px;
   font-weight: bold;
   animation: darkSoulsPulse 1s infinite;
 }
@@ -164,11 +164,106 @@ a .bgnavcustom {
 }
 /* sezione annunci */
 .annunci-bg {
- background-image: url("./img/sfondoannunci.png");
- background-size: 100% 100%;
- background-position: center;
- background-attachment: fixed;
+  background-image: url("./img/sfondoannunci.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
+}
+.metal-shadow {
+  color: rgb(190, 78, 2);
+  text-shadow:
+  0 0 2px rgb(0, 0, 0),
+  0 0 5px var(--rosso-sangue),
+  0 0 10px var(--rosso-vivo),
+  0 0 20px var(--rosso-brillante);
+}
+.bg-shadow-custom {
+  background: rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%);
+  
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+#search {
+  border: 2px solid var(--ds-sinopia);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#search::placeholder {
+  color: var(--ds-bianco-sporco);
+}
+#categoria, #prezzo-min, #prezzo-max {
+  border: 2px solid var(--ds-sinopia);
+  color: var(--ds-bianco-sporco);
+}
+option {
+  background-color: var(--ds-nero);
+  color: var(--ds-bianco-sporco);
+}
+#ordine {
+  border: 2px solid var(--ds-sinopia);
+  color: var(--ds-bianco-sporco);
+}
+#prezzo{
+  border: 2px solid var(--ds-sinopia);
+  color: var(--ds-bianco-sporco);
+}
+#prezzo::placeholder {
+  color: var(--ds-bianco-sporco);
+}
+#prezzo:focus-visible{
+  background: rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%);
+  border-color: var(--ds-sinopia);
+  color: var(--ds-bianco-sporco);
+}
+#prezzo::-webkit-inner-spin-button,
+#prezzo::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.bg-shadow-custom:focus,
+.form-select.bg-shadow-custom:focus {
+  background: rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%);
+  border-color: var(--ds-sinopia);
+  box-shadow: 0 0 8px var(--ds-sinopia);
+  color: var(--ds-bianco-sporco);
+}
+.btn-custom-primary {
+  border-color: var(--rosso-sangue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--ds-sinopia);
+  transition: background-color 0.3s ease;
+  margin-top: 10%;
+}
+.btn-custom-primary:hover {
+  background-color: var(--rosso-sangue);
+  color: var(--ds-bianco-sporco);
+  border-color: var(--rosso-brillante);
+  text-decoration: none;
+}
+.btn-custom-secondary { 
+  border-color: var(--ds-verde);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--ds-sinopia);
+  transition: background-color 0.3s ease;
+  margin-top: 10%;
+}
+.btn-custom-secondary:hover {
+  background-color: var(--ds-verde);
+  color: var(--ds-bianco-sporco);
+  border-color: var(--ds-verde-scuro);
+  text-decoration: none;
 }
 /* Sfondo personalizzato per le card Annunci */
 .ds-card {
@@ -245,7 +340,7 @@ a .bgnavcustom {
 }
 .email-custom {
   color: var(--ds-sinopia);
-
+  
 }
 .btn-custom {
   background-color: var(--ds-rosso-vivo);

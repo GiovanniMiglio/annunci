@@ -118,8 +118,8 @@ a .bgnavcustom {
 }
 
 .navbar-nav .nav-link:hover {
-  color: rgb(var(--rosso-vivo));
-  text-shadow: rgba(var(), 0.8) 0 0 5px, rgba(var(--rosso-brillante), 0.6) 0 0 15px, rgba(var(--rosso-sangue), 0.4) 0 0 30px;
+  color: var(--rosso-vivo);
+  text-shadow: 0 0 5px var(--rosso-vivo), 0 0 15px var(--rosso-brillante), 0 0 30px var(--rosso-sangue);
   font-weight: bold;
   animation: darkSoulsPulse 1s infinite;
 }

@@ -29,7 +29,14 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.bg-shadow-custom {
+  background: rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(2px) saturate(120%);
+  -webkit-backdrop-filter: blur(2px) saturate(120%);
+  
+  padding: 8px 16px;
+  border-radius: 8px;
+}
 @font-face {
   font-family: 'Optimus Princeps';
   src: url('font/OPTIMUSPRINCEPS.TTF') format('truetype');
@@ -113,8 +120,8 @@ a .bgnavcustom {
 
 
 .navbar-nav .nav-link:hover {
-  color: rgb(var(--rosso-vivo));
-  text-shadow: rgba(var(), 0.8) 0 0 5px, rgba(var(--rosso-brillante), 0.6) 0 0 15px, rgba(var(--rosso-sangue), 0.4) 0 0 30px;
+  color: rgb(139, 0, 0);
+  text-shadow: rgba(139, 0, 0, 0.8) 0 0 5px, rgba(178, 34, 34, 0.6) 0 0 15px, rgba(80, 0, 0, 0.4) 0 0 30px;
   font-weight: bold;
   animation: darkSoulsPulse 1s infinite;
 }
@@ -172,9 +179,25 @@ body {
   background-size: 100% 100%;
   background-position: center;
   padding: 50px 0;
-  min-height: calc(100vh - 70px - 40px); /* Altezza minima per coprire la viewport meno navbar e footer */
+  padding-bottom: 0%;
+  min-height: calc(100vh - 70px - 40px);
 }
-
+.btn-custom-primary {
+  border-color: var(--rosso-sangue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--ds-sinopia);
+  transition: background-color 0.3s ease;
+  margin-top: 10%;
+}
+.btn-custom-primary:hover {
+  background-color: var(--rosso-sangue);
+  color: var(--ds-bianco-sporco);
+  border-color: var(--rosso-brillante);
+  text-decoration: none;
+}
 .fabbro-container {
   position: relative;
   width: 300px;
@@ -221,7 +244,15 @@ body {
 #andre-up, #andre-down {
   transition: opacity 0.1s linear, transform 0.1s linear;
 }
+@media (max-width: 768px) {
 
+  .andre {
+    width: 140%;
+    height: 140%;
+    top: 4%;
+    left: -3%;
+  }
+}
 /* footer */
 .footer-custom {
   background-image: url(img/sfondofooterchisono.png);
